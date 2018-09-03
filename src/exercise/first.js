@@ -23,7 +23,6 @@ change (cost, cash) {
   let five = 0
   let two = 0
   let one = 0
-  console.log('total1', total)
   if(total > 500 && total !== 0) {
     fiveHundred = Math.floor(total / 500)
     total = total - 500
@@ -32,7 +31,6 @@ change (cost, cash) {
   }
 
   if (total >= 100 && total < 500 && total !== 0) {
-    console.log('total2', total)
     oneHundred = Math.floor(total/100)
     total = total - (oneHundred*100)
   } else if(total === 0){

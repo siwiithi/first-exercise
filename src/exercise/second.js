@@ -8,9 +8,11 @@ import React, { Component } from 'react'
 export default class Second extends Component {
   getNumber () {
     for (var i=1;i<4;i++) {
-      for (var j=2;j<5;j++) {
-        console.log(j)
-       }
+      for(var j=i+1; j<(i+2); j++){
+        for (var k=i+2; k<(i+3); k++){
+          console.log(i, j, k)
+        }
+      }
     }
   }
 
