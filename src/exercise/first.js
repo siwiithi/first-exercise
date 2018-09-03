@@ -45,9 +45,7 @@ change (cost, cash) {
   }
 
   if ( total >= 20 && total < 50 && total !== 0) {
-    console.log('total', total)
     twenty = Math.floor(total/20)
-    console.log('twenty', twenty)
     total = total - (twenty*20)
   } else if(total === 0){
     twenty = 0

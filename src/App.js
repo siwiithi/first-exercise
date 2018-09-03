@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import First from './exercise/first'
 import Second from './exercise/second'
+import Third from './exercise/third'
+import Fourth from './exercise/fourth'
 
 class App extends Component {
   render() {
@@ -20,6 +22,8 @@ class App extends Component {
       <div>
         <First />
         <Second />
+        <Third />
+        <Fourth />
       </div>
     )
   }
