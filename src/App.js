@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FirstExercise from './exercise/first'
+import First from './exercise/first'
+import Second from './exercise/second'
 
 class App extends Component {
   render() {
@@ -16,8 +17,11 @@ class App extends Component {
       //   </p>
         
       // </div>
-      <FirstExercise />
-    );
+      <div>
+        <First />
+        <Second />
+      </div>
+    )
   }
 }
 
