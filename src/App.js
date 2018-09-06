@@ -5,6 +5,7 @@ import First from './exercise/first'
 import Second from './exercise/second'
 import Third from './exercise/third'
 import Fourth from './exercise/fourth'
+import Fifth from './exercise/fifth'
 
 class App extends Component {
   render() {
@@ -23,7 +24,8 @@ class App extends Component {
         <First />
         <Second />
         <Third />
-        <Fourth />
+        {/* <Fourth /> */}
+        <Fifth />
       </div>
     )
   }
