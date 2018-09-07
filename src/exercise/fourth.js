@@ -10,15 +10,16 @@
 import React, { Component } from 'react'
 
 export default class Fourth extends Component {
-  DecToBin(num) {
-    console.log(9%2)
-  }
+  // DecToBin(num) {
+  //   let bin = num.toString(2)
+  //   return <div>
+  //     <span>{num} ==> {bin}</span>
+  //   </div>
+  // }
   render() {
     return (
       <div>
-        <p>--------------------------</p>
         {this.DecToBin(9)}
-        <p>--------------------------</p>
       </div>
     )
   }

@@ -24,7 +24,7 @@ class App extends Component {
         <First />
         <Second />
         <Third />
-        {/* <Fourth /> */}
+        <Fourth />
         <Fifth />
       </div>
     )
