@@ -4,20 +4,27 @@ import React, { Component } from 'react'
 export default class Fifth  extends Component {
   randomNumber(n) {
     let numbers = []
+    let res = []
     for(var i=1; i<=n; i++){
       numbers.push(Math.floor(Math.random()*1000)+1)
     }
     const sortedNumbers = numbers.sort(function(a, b){return a-b})
-    console.log('sortedNumber1', sortedNumbers)
-    for(var i=1; i<=sortedNumbers.length; i++){
-    for(var j=i; j<=i+1; j++){
-     if (sortedNumbers[j] === sortedNumbers[j+1]){
-       sortedNumbers.splice(sortedNumbers[j+1])
-       console.log('sortedNumber', sortedNumbers)
-     }
+    //sortedNumbers = [38, 198, 218, 420, 650, 742, 797, 833, 837, 853]
+    for(var i=0; i<sortedNumbers.length; i++){
+      // Clear ค่า count ทุกรอบ
+      let count = 0
+      for(var j=0; j<sortedNumbers.length; j++) {
+        if(sortedNumbers[i]===sortedNumbers[j]){
+          count++
+        }
+      }
+      if(sortedNumbers[i] !== sortedNumbers[i-1]) {
+        res.push({ number: sortedNumbers[i], count: count})
+      }
     }
-  }
-
+    console.log('-------------------------------')
+    console.log(res)
+    console.log('-------------------------------')
   }
   render () {
     return (
