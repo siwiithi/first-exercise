@@ -15,6 +15,7 @@ import React, { Component } from 'react'
 export default class First extends Component {
 change (cost, cash) {
   let total = cash - cost
+
   let fiveHundred = 0
   let oneHundred = 0
   let fifty = 0
@@ -23,6 +24,7 @@ change (cost, cash) {
   let five = 0
   let two = 0
   let one = 0
+  
   if(total > 500 && total !== 0) {
     fiveHundred = Math.floor(total / 500)
     total = total - 500
@@ -97,7 +99,7 @@ render () {
     <div>
     <p><strong>First</strong></p>
     <p>------------------------------------------------------</p>
-     { this.change(650, 1000)}
+     { this.change(300, 1000)}
     <p>------------------------------------------------------</p>
     </div>
   )

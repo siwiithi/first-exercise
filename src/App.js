@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import First from './exercise/first'
+import FirstRecursive from './exercise/first-recursive'
 import Second from './exercise/second'
 import Third from './exercise/third'
 import Fourth from './exercise/fourth'
@@ -22,9 +23,10 @@ class App extends Component {
       // </div>
       <div>
         <First />
+        <FirstRecursive />
         <Second />
         <Third />
-        {/* <Fourth /> */}
+        <Fourth />
         <Fifth />
       </div>
     )
